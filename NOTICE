@@ -1,0 +1,87 @@
+Copyright 2025 LinkedIn Corporation
+All Rights Reserved.
+
+Licensed under the LinkedIn Learning Exercise File License (the "License").
+See LICENSE in the project root for license information.
+
+ATTRIBUTIONS:
+
+---
+
+httpx
+[https://github.com/encode/httpx/](https://github.com/encode/httpx/)
+License: BSD-3-Clause
+[https://github.com/encode/httpx/blob/master/LICENSE.md](https://github.com/encode/httpx/blob/master/LICENSE.md)
+----------------------------------------------------------------------------------------------------------------
+
+---
+
+python-dotenv
+[https://github.com/theskumar/python-dotenv](https://github.com/theskumar/python-dotenv)
+License: BSD-3-Clause
+[https://github.com/theskumar/python-dotenv/blob/main/LICENSE](https://github.com/theskumar/python-dotenv/blob/main/LICENSE)
+----------------------------------------------------------------------------------------------------------------------------
+
+---
+
+pandas
+[https://github.com/pandas-dev/pandas](https://github.com/pandas-dev/pandas)
+License: BSD-3-Clause
+[https://github.com/pandas-dev/pandas/blob/main/LICENSE](https://github.com/pandas-dev/pandas/blob/main/LICENSE)
+----------------------------------------------------------------------------------------------------------------
+
+---
+
+langraph
+[https://github.com/langchain-ai/langgraph](https://github.com/langchain-ai/langgraph)
+License: MIT
+[https://github.com/langchain-ai/langgraph/blob/main/LICENSE](https://github.com/langchain-ai/langgraph/blob/main/LICENSE)
+--------------------------------------------------------------------------------------------------------------------------
+
+---
+
+openai
+[https://github.com/openai/openai-python](https://github.com/openai/openai-python)
+License: Apache 2.0
+[https://github.com/openai/openai-python/blob/main/LICENSE](https://github.com/openai/openai-python/blob/main/LICENSE)
+----------------------------------------------------------------------------------------------------------------------
+
+---
+
+mcp
+[https://github.com/modelcontextprotocol/python-sdk](https://github.com/modelcontextprotocol/python-sdk)
+License: MIT
+[https://github.com/modelcontextprotocol/python-sdk/blob/main/LICENSE](https://github.com/modelcontextprotocol/python-sdk/blob/main/LICENSE)
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+---
+
+ipykernel
+[https://github.com/ipython/ipykernel](https://github.com/ipython/ipykernel)
+License: BSD-3-Clause
+[https://github.com/ipython/ipykernel/blob/main/LICENSE](https://github.com/ipython/ipykernel/blob/main/LICENSE)
+----------------------------------------------------------------------------------------------------------------
+
+---
+
+langchain
+[https://github.com/langchain-ai/langchain](https://github.com/langchain-ai/langchain)
+License: MIT
+[https://github.com/langchain-ai/langchain/blob/master/LICENSE](https://github.com/langchain-ai/langchain/blob/master/LICENSE)
+------------------------------------------------------------------------------------------------------------------------------
+
+---
+
+langchain-openai
+[https://github.com/langchain-ai/langchain](https://github.com/langchain-ai/langchain)
+License: MIT
+[https://github.com/langchain-ai/langchain/blob/master/LICENSE](https://github.com/langchain-ai/langchain/blob/master/LICENSE)
+------------------------------------------------------------------------------------------------------------------------------
+
+---
+
+
+
+forth above. In addition, such third party code may also depend on and load 
+multiple tiers of dependencies. Please review the applicable licenses of the 
+additional dependencies.
