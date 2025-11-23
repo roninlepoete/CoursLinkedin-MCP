@@ -1,12 +1,13 @@
 from typing import Optional
 from mcp.server.fastmcp import FastMCP
 import pandas as pd
- 
+import pathlib
 
- 
+# Définir le chemin relatif correct de manière robuste
+script_dir = pathlib.Path(__file__).parent
+data_path = script_dir.parent / "Data" / "cakes_data.csv"
 
-
-cakes_df = pd.read_csv("../Data/cakes_data.csv")
+cakes_df = pd.read_csv(data_path)
 
 # MCP server
 mcp = FastMCP(

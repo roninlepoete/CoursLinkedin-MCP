@@ -1,11 +1,25 @@
 
 from typing import Optional
-from langchain_openai.chat_models import ChatOpenAI
 import pandas as pd
+from dotenv import load_dotenv
+import pathlib
+import uuid
+
+from langchain_openai.chat_models import ChatOpenAI
 from langchain_core.tools import tool
-from langgraph.prebuilt import create_react_agent
+from langchain.agents import create_react_agent
 from langgraph.checkpoint.memory import MemorySaver
-from langchain_core.messages import HumanMessage,SystemMessage 
+from langchain_core.messages import HumanMessage, SystemMessage
+
+# import os
+
+# Charger les variables d'environnement
+load_dotenv()
+
+# Définir le chemin relatif correct
+
+script_dir = pathlib.Path(__file__).parent
+data_path = script_dir.parent / "Data" / "cakes_data.csv"
 
  
 model = ChatOpenAI( 
@@ -15,9 +29,8 @@ model = ChatOpenAI(
     model='gpt-4o'
 )
  
-cakes_df = pd.read_csv("../Data/cakes_data.csv")
+cakes_df = pd.read_csv(data_path) 
 
- 
 @tool
 def get_cake_price(cake_name:str) -> Optional[float] :
     """
@@ -105,7 +118,7 @@ cake_QnA_agent=create_react_agent(
 
 
 
-import uuid
+
  
 config = {"configurable": {"thread_id": uuid.uuid4()}}
  

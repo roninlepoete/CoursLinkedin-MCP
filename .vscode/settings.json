@@ -17,5 +17,6 @@
   "terminal.integrated.fontSize": 13,
   "workbench.colorTheme": "Tomorrow Night Blue",
   "workbench.fontAliasing": "antialiased",
-  "workbench.statusBar.visible": true
+  "workbench.statusBar.visible": true,
+  "python.defaultInterpreterPath": "${workspaceFolder}\\.mcp_venv\\Scripts\\python.exe"
 }
