@@ -10,7 +10,7 @@ async def main():
     
     server_params = StdioServerParameters(
         command="python",  
-        args=["02_cakes_infos_server.py"],   
+        args=["02_cakes_infos_server.py", "stdio"],   
     )
 
      

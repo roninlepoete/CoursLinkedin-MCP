@@ -86,9 +86,14 @@ def get_total_cakes_count() -> int :
 
  
 if __name__ == "__main__":
-    transport = "streamable-http"
+    import sys
+    
+    # Récupérer le mode de transport depuis les arguments (par défaut : streamable-http)
+    transport = sys.argv[1] if len(sys.argv) > 1 else "streamable-http"
+
     if transport == "stdio":
-        print("Running MCP server in your local machine")
+        # En mode stdio, on NE DOIT PAS utiliser print() sur stdout car cela corrompt le protocole JSON-RPC
+        # On peut logger sur stderr si besoin : print("...", file=sys.stderr)
         mcp.run(transport="stdio")
         
     elif transport == "sse":
