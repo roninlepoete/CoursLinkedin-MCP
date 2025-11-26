@@ -7,3 +7,4 @@ pandas
 langchain
 langchain-openai
 langgraph
+langchain-mcp-adapters

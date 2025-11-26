@@ -1,13 +1,19 @@
 import asyncio
 import uuid 
+import warnings
+from dotenv import load_dotenv
 from mcp import ClientSession, StdioServerParameters
 from mcp.client.stdio import stdio_client 
+
+
 from langchain_openai.chat_models import ChatOpenAI
 from langgraph.prebuilt import create_react_agent
 from langgraph.checkpoint.memory import MemorySaver
 from langchain_core.messages import HumanMessage,SystemMessage 
 from langchain_mcp_adapters.tools import load_mcp_tools  
  
+warnings.filterwarnings("ignore")
+load_dotenv()
 
 model = ChatOpenAI(
     temperature=0.1,
@@ -30,7 +36,7 @@ async def main():
     
     server_params = StdioServerParameters(
         command="python",  
-        args=["02_cakes_infos_server.py"],   
+        args=["02_cakes_infos_server.py", "stdio"],   
     )
 
      
@@ -54,6 +60,7 @@ async def main():
  
 
             response = await  cake_QnA_agent.ainvoke(inputs, config)
+           
             print("Step by Step execution : ")
             for message in response['messages']:
                 print(message.pretty_repr())

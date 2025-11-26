@@ -89,7 +89,7 @@ if __name__ == "__main__":
     import sys
     
     # Récupérer le mode de transport depuis les arguments (par défaut : streamable-http)
-    transport = sys.argv[1] if len(sys.argv) > 1 else "streamable-http"
+    transport = sys.argv[1] if len(sys.argv) > 1 else "sse"
 
     if transport == "stdio":
         # En mode stdio, on NE DOIT PAS utiliser print() sur stdout car cela corrompt le protocole JSON-RPC
