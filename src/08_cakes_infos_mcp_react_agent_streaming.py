@@ -1,6 +1,11 @@
 import asyncio
 import uuid
- 
+import warnings
+# Filtrer les warnings avant les imports de librairies tierces
+warnings.filterwarnings("ignore")
+from dotenv import load_dotenv
+
+
 from mcp import ClientSession
 from mcp.client.streamable_http import streamablehttp_client
 from langchain_openai.chat_models import ChatOpenAI
@@ -9,6 +14,7 @@ from langgraph.checkpoint.memory import MemorySaver
 from langchain_core.messages import HumanMessage,SystemMessage 
 from langchain_mcp_adapters.tools import load_mcp_tools  
  
+load_dotenv()
 
 model = ChatOpenAI(
     temperature=0.1,
